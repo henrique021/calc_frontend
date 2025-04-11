@@ -1,0 +1,61 @@
+<div class="datepicker">
+<mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker1"/>
+    <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+    <mat-datepicker #picker1></mat-datepicker>
+</mat-form-field>
+
+<mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker"/>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+</div>
+
+<div class="example-container">
+  <mat-label>Dias uteis</mat-label>
+    <mat-form-field>
+      <input matInput maxlength="4">
+    </mat-form-field>
+
+    <mat-label>Dias Corridos</mat-label>
+    <mat-form-field>
+      <input matInput #input maxlength="4"/>
+    </mat-form-field>
+
+    <mat-label>Meses</mat-label>
+    <mat-form-field>
+      <input matInput #input maxlength="4"/>
+    </mat-form-field> 
+
+    <mat-label>Anos</mat-label>
+    <mat-form-field>
+      <input matInput #input maxlength="4"/>
+    </mat-form-field> 
+
+    <mat-label>Feriados (que caem em dias da semana)</mat-label>
+    <mat-form-field>
+      <input matInput #input maxlength="4"/>
+    </mat-form-field>
+  </div>
+
+
+  
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <div class="example-button-container">
+        <button mat-fab extended>
+          <mat-icon>calculate</mat-icon>
+          Calculate
+        </button>
+      </div>
+      
+    </div>
+    <button mat-fab extended>
+      <mat-icon>calculate</mat-icon>
+      Calculate
+    </button>
+  </div>

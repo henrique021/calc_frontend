@@ -1,0 +1,33 @@
+<div class="panel">
+    <h2>Calculadora de Datas</h2>
+  
+    <form [formGroup]="form" (ngSubmit)="processar()">
+      <div>
+        <label>Data Inicial:</label>
+        <input type="date" formControlName="startDate" />
+      </div>
+      <div style="margin-top: 1rem;">
+        <label>Data Final:</label>
+        <input type="date" formControlName="endDate" />
+      </div>
+  
+      <button type="submit" [disabled]="loading">
+        {{ loading ? 'Processando...' : 'Processar' }}
+      </button>
+    </form>
+  
+    <div *ngIf="error" style="color: red; margin-top: 1rem;">{{ error }}</div>
+  
+    <div class="resultado">
+      
+      <ul>
+       <!-- <li><strong>Data Inicial:</strong> {{ result?.dataInicial ?? '-' }}</li> -->
+       <!-- <li><strong>Data Final:</strong> {{ result?.dataFinal ?? '-' }}</li> -->
+        <li><strong>Dias úteis:</strong> {{ result?.diasUteis ?? '-' }}</li>
+        <li><strong>Dias Não Uteis:</strong> {{ result?.diasNaoUteis ?? '-' }}</li>
+        <li><strong>Feriados:</strong> {{ result?.feriados ?? '-' }}</li>
+        <li><strong>Meses:</strong> {{ result?.meses ?? '-' }}</li>
+        <li><strong>Anos:</strong> {{ result?.anos ?? '-' }}</li>
+      </ul>
+    </div>
+  </div>

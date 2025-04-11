@@ -1,0 +1,93 @@
+.example-container mat-form-field + mat-form-field {
+    margin-left: 40px;
+  }
+
+.example-container{
+  height: 90px;
+  display: flex;
+  /* Centraliza no eixo X */
+  align-items: center; /* Centraliza no eixo Y */
+  
+ 
+  }
+
+  .example-container mat-form-field+ mat-label{
+    margin-left: 100px;
+  }
+  
+  .example-container mat-form-field {
+    width: 60px;
+    height: 50px;
+    
+  }
+  
+  .example-container form {
+    margin-bottom: 20px;
+  }
+  
+  .example-container form > * {
+    margin: 12px 0;
+  }
+  
+  .example-container .mat-radio-button {
+    margin: 0 12px;
+  }
+  
+  .example-form-fields {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .datepicker mat-form-field + mat-form-field{
+
+    margin-left: 40px;
+    
+  }
+
+  .datepicker mat-form-field{
+
+    margin-left: 8px;
+    
+  }
+
+  /*Desabilita a animacao de linha ao focar no campo */
+  ::ng-deep mat-form-field .mdc-line-ripple {
+    display: none !important;
+  }
+
+  ::ng-deep mat-form-field input {
+    font-size: 12px !important; /* Diminui o tamanho da fonte do input */
+  }
+
+
+  section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  
+  .example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 140px;
+  }
