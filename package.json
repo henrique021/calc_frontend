@@ -1,12 +1,13 @@
 {
   "name": "demo-app",
   "version": "0.0.0",
- "ng": "ng",
+"scripts": {
+  "ng": "ng",
   "start": "npx serve -s dist/demo-app -l tcp://0.0.0.0:$PORT",
   "build": "ng build --configuration production",
   "watch": "ng build --watch --configuration development",
   "test": "ng test"
-},
+   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^19.0.0",
