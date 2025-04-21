@@ -1,6 +1,6 @@
 {
     "/api": {
-      "target": "https://datecalculator-production.up.railway.app/",
+      "target": "https://datecalculator-production.up.railway.app",
       "secure": false,
       "changeOrigin": true,
       "logLevel": "debug"
