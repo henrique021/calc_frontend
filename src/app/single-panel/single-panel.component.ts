@@ -36,7 +36,7 @@ export class SinglePanelComponent {
       dataFim: endDate
     };
 
-    this.http.get<any>('/api/calculate', { params }).subscribe({
+    this.http.get<any>('https://datecalculator-production.up.railway.app/api/calculate', { params }).subscribe({
       next: (res) => {
         this.result = {
           dataInicial: res.dataInicial,
